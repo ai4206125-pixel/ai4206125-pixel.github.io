@@ -3,26 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Монохром — Фотостудия</title>
+  <title>Монохром — фотостудия</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-900">
   <header class="bg-white shadow">
     <nav class="container mx-auto flex justify-between items-center py-4">
-      <a href="#" class="text-xl font-semibold">Монохром</a>
+      <a href="#home" class="text-xl font-semibold">Монохром</a>
       <ul class="flex space-x-4">
         <li><a href="#services" class="hover:underline">Услуги</a></li>
         <li><a href="#about" class="hover:underline">О студии</a></li>
+        <li><a href="#portfolio" class="hover:underline">Портфолио</a></li>
         <li><a href="#contact" class="hover:underline">Контакты</a></li>
       </ul>
     </nav>
   </header>
-  <section class="relative">
-    <img src="hero.jpg" alt="Фото студии" class="w-full h-96 object-cover">
+
+  <!-- Hero Section -->
+  <section id="home" class="relative">
+    <img src="assets/25ADB763-8140-432F-BD55-A2AED430ACDE.jpeg" alt="Портрет" class="w-full h-96 object-cover">
     <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-      <h1 class="text-4xl md:text-5xl text-white font-bold">Фотостудия «Монохром»</h1>
+      <h1 class="text-4xl md:text-5xl text-white font-bold text-center px-4">Когда важна форма, а не шум.</h1>
     </div>
   </section>
+
+  <!-- Services Section -->
   <section id="services" class="container mx-auto py-12">
     <h2 class="text-3xl font-bold mb-6">Услуги</h2>
     <div class="grid md:grid-cols-3 gap-6">
@@ -32,28 +37,81 @@
       </div>
       <div class="border rounded-lg p-4 shadow-sm">
         <h3 class="text-xl font-semibold mb-2">Портреты</h3>
-        <p>Индивидуальные и семейные портреты, которые подчеркнут вашу уникальность.</p>
+        <p>Индивидуальные и семейные портреты, подчеркивающие вашу индивидуальность и стиль.</p>
       </div>
       <div class="border rounded-lg p-4 shadow-sm">
         <h3 class="text-xl font-semibold mb-2">Аренда студии</h3>
-        <p>Сдаём зал в аренду для фотографов и видеографов, оборудованный всем необходимым.</p>
+        <p>Сдаём в аренду наш зал, оборудованный всем необходимым для съёмок и мероприятий.</p>
       </div>
     </div>
   </section>
-  <section id="about" class="bg-gray-100 py-12">
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-50 py-12">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold mb-6">О студии</h2>
-      <p class="max-w-3xl">Мы — фотостудия «Монохром», команда увлечённых профессионалов, создающих атмосферные снимки. Мы организуем съёмки в студии и на выезде, сочетая креативность и внимательность к деталям, чтобы воплощать ваши идеи.</p>
+      <p class="max-w-3xl mb-4">Мы — фотостудия «Монохром», команда увлечённых профессионалов, создающих атмосферные снимки. Мы организуем съёмки в студии и на выезде, сочетая креативность и внимание к деталям. Нам важно создать комфортную, вдохновляющую атмосферу, чтобы вы чувствовали себя свободно и могли раскрыться перед камерой.</p>
+      <p class="max-w-3xl">Название «Монохром» отражает наш минималистичный подход и любовь к классической черно-белой эстетике. Мы следим за тенденциями визуальной культуры и используем их, чтобы ваши фотографии выглядели актуально и стильно.</p>
     </div>
   </section>
-  <section id="contact" class="container mx-auto py-12">
-    <h2 class="text-3xl font-bold mb-6">Контакты</h2>
-    <p>Свяжитесь с нами, чтобы обсудить вашу съёмку или забронировать студию.</p>
-    <a href="mailto:contact@monochrome.com" class="text-blue-600 hover:underline">contact@monochrome.com</a>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold mb-6">Портфолио</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div>
+        <img src="assets/25ADB763-8140-432F-BD55-A2AED430ACDE.jpeg" alt="Портрет" class="rounded-lg mb-2">
+        <p class="text-sm text-gray-700">Портрет в мягком свете</p>
+      </div>
+      <div>
+        <img src="assets/938B21B5-AE7F-4130-857F-D459334A346A.jpeg" alt="Силуэт" class="rounded-lg mb-2">
+        <p class="text-sm text-gray-700">Женский силуэт. Спокойствие.</p>
+      </div>
+      <div>
+        <img src="assets/380AC584-94BB-4EF2-AD6A-49487F7A0694.jpeg" alt="Минимализм" class="rounded-lg mb-2">
+        <p class="text-sm text-gray-700">Минимализм и приступствие.</p>
+      </div>
+      <div>
+        <img src="assets/30596E27-209C-4047-BC0D-9DFF0A2605AE.jpeg" alt="Мужской портрет" class="rounded-lg mb-2">
+        <p class="text-sm text-gray-700">Мужской портрет. Контраст света.</p>
+      </div>
+      <div>
+        <img src="assets/18818350-A7EC-45B9-854B-A851C3FFDC2C.jpeg" alt="Белая рубашка" class="rounded-lg mb-2">
+        <p class="text-sm text-gray-700">Классический стиль. Белая рубашка.</p>
+      </div>
+      <div>
+        <img src="assets/78347479-9F9A-4E8D-947B-CBCED3E9B585D.jpeg" alt="Художественный портрет" class="rounded-lg mb-2">
+        <p class="text-sm text-gray-700">Художественный портрет. Чёрное и белое.</p>
+      </div>
+      <div>
+        <img src="assets/87964320-8F7C-4173-9C07-4917071E464D.jpeg" alt="Эмоция и тишина" class="rounded-lg mb-2">
+        <p class="text-sm text-gray-700">Серия: эмоция и тишина.</p>
+      </div>
+      <div>
+        <img src="assets/AE3A79BB-8725-4BDA-9E08-2D526170D63B.jpeg" alt="Строгий свет" class="rounded-lg mb-2">
+        <p class="text-sm text-gray-700">Портрет в строгом свете.</p>
+      </div>
+      <div>
+        <img src="assets/BA73C94D-7842-43D0-B026-1962A953D6D8.jpeg" alt="Тепло в монохроме" class="rounded-lg mb-2">
+        <p class="text-sm text-gray-700">Тепло в монохроме.</p>
+      </div>
+    </div>
   </section>
-  <footer class="bg-gray-200 py-4">
-    <div class="container mx-auto text-center text-gray-600">
-      &copy; 2025 Монохром. Все права защищены.
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-50 py-12">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Контакты</h2>
+      <p class="mb-2">Адрес: г. Мытищи, ул. Астрахова, д. 1, корп. 2</p>
+      <p class="mb-2">Телефон: +7 (495) 123-45-67</p>
+      <p class="mb-2">Instagram: <a href="https://www.instagram.com/prof_photo_com_" class="text-blue-600 hover:underline" target="_blank">@prof_photo_com_</a></p>
+      <p class="mb-2">Как добраться: 5 минут пешком от метро «Арбатская»</p>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Монохром. Все права защищены.</p>
     </div>
   </footer>
 </body>
