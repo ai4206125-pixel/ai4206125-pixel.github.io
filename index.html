@@ -1,118 +1,361 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Монохром — фотостудия</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Фотостудия «Монохром» | аренда студии и съёмка</title>
+  <meta name="description" content="Импульсный студийный свет, чистые фоны, пространство без визуального шума. Аренда фотостудии и съёмка для брендов, маркетплейсов и креативных проектов." />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="bg-white text-gray-900">
-  <header class="bg-white shadow">
-    <nav class="container mx-auto flex justify-between items-center py-4">
-      <a href="#home" class="text-xl font-semibold">Монохром</a>
-      <ul class="flex space-x-4">
-        <li><a href="#services" class="hover:underline">Услуги</a></li>
-        <li><a href="#about" class="hover:underline">О студии</a></li>
-        <li><a href="#portfolio" class="hover:underline">Портфолио</a></li>
-        <li><a href="#contact" class="hover:underline">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
+<body>
 
-  <!-- Hero Section -->
-  <section id="home" class="relative">
-    <img src="assets/25ADB763-8140-432F-BD55-A2AED430ACDE.jpeg" alt="Портрет" class="w-full h-96 object-cover">
-    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-      <h1 class="text-4xl md:text-5xl text-white font-bold text-center px-4">Когда важна форма, а не шум.</h1>
+<header>
+  <div class="container">
+    <div class="nav">
+      <div class="left">
+        <a href="#top" aria-label="Монохром">
+          <img src="assets/img/logo-header.png" width="220" height="51" alt="Монохром" />
+        </a>
+      </div>
+
+      <nav class="menu" aria-label="Навигация">
+        <a href="#halls">Залы</a>
+        <a href="#gear">Оборудование</a>
+        <a href="#pricing">Тарифы</a>
+        <a href="#rules">Правила</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap:10px">
+        <a class="cta" href="#booking">Забронировать</a>
+        <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" data-mobile data-open="0">
+      <a href="#halls">Залы</a>
+      <a href="#gear">Оборудование</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#rules">Правила</a>
+      <a href="#contact">Контакты</a>
+      <a href="#booking"><strong>Забронировать</strong></a>
+    </div>
+  </div>
+</header>
+
+<main id="top" class="bg-grain">
+
+  <section class="hero">
+    <div class="container">
+      <div class="grid">
+
+        <div class="card main">
+          <span class="badge">
+            <img src="assets/img/logo-mark.png" alt="" width="18" height="14" />
+            Импульсный свет · чистые фоны · без визуального шума
+          </span>
+
+          <h1>Фотостудия «Монохром»</h1>
+
+          <p class="sub">
+            Импульсный студийный свет, чистые фоны, всё готово к съёмке.<br/>
+            Студийный свет и пространство без визуального шума.<br/>
+            Подходит для брендов, маркетплейсов и креативных съёмок.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="#booking">Забронировать</a>
+            <a class="btn" href="#halls">Смотреть залы</a>
+          </div>
+        </div>
+
+        <div class="card side">
+          <div>
+            <div class="kpis">
+              <div class="kpi">
+                <div class="n">Hensel</div>
+                <div class="t">Expert Pro 1000, 4 головы</div>
+              </div>
+              <div class="kpi">
+                <div class="n">Godox</div>
+                <div class="t">постоянный свет 100W</div>
+              </div>
+              <div class="kpi">
+                <div class="n">Чисто</div>
+                <div class="t">аккуратные фоны и порядок</div>
+              </div>
+              <div class="kpi">
+                <div class="n">Быстро</div>
+                <div class="t">приехал → снял → ушёл</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:flex-end">
+            <img src="assets/img/logo-stamp.png" alt="" style="width:180px; opacity:.28" />
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="container mx-auto py-12">
-    <h2 class="text-3xl font-bold mb-6">Услуги</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="border rounded-lg p-4 shadow-sm">
-        <h3 class="text-xl font-semibold mb-2">Студийные съёмки</h3>
-        <p>Профессиональные фотосессии в оборудованной студии с разнообразными фонами и реквизитом.</p>
+  <div class="hr"></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="head">
+        <h2>Свет, который не подводит</h2>
+        <p class="note">Минимум слов, максимум результата. Никто не обязан страдать из-за “непонятного света”.</p>
       </div>
-      <div class="border rounded-lg p-4 shadow-sm">
-        <h3 class="text-xl font-semibold mb-2">Портреты</h3>
-        <p>Индивидуальные и семейные портреты, подчеркивающие вашу индивидуальность и стиль.</p>
-      </div>
-      <div class="border rounded-lg p-4 shadow-sm">
-        <h3 class="text-xl font-semibold mb-2">Аренда студии</h3>
-        <p>Сдаём в аренду наш зал, оборудованный всем необходимым для съёмок и мероприятий.</p>
+
+      <div class="features">
+        <div class="card feature">
+          <h3>Импульсный свет</h3>
+          <p>Hensel Expert Pro 1000: стабильность, мощность и предсказуемая картинка.</p>
+        </div>
+        <div class="card feature">
+          <h3>Чистые фоны</h3>
+          <p>Ровные фоны и аккуратное пространство. Никакого визуального мусора в кадре.</p>
+        </div>
+        <div class="card feature">
+          <h3>Съёмка без стресса</h3>
+          <p>Приехал, включил, снял. Без квестов “а где тут розетка / стойка / синхра”.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="bg-gray-50 py-12">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-6">О студии</h2>
-      <p class="max-w-3xl mb-4">Мы — фотостудия «Монохром», команда увлечённых профессионалов, создающих атмосферные снимки. Мы организуем съёмки в студии и на выезде, сочетая креативность и внимание к деталям. Нам важно создать комфортную, вдохновляющую атмосферу, чтобы вы чувствовали себя свободно и могли раскрыться перед камерой.</p>
-      <p class="max-w-3xl">Название «Монохром» отражает наш минималистичный подход и любовь к классической черно-белой эстетике. Мы следим за тенденциями визуальной культуры и используем их, чтобы ваши фотографии выглядели актуально и стильно.</p>
+  <section class="section" id="halls">
+    <div class="container">
+      <div class="head">
+        <h2>Залы</h2>
+        <p class="note">Пока стоят аккуратные заглушки. Меняешь фото и названия, и всё выглядит как надо.</p>
+      </div>
+
+      <div class="halls">
+        <div class="card hall">
+          <img src="assets/img/hall-1.png" alt="Зал 1" />
+          <div class="body">
+            <div class="title">
+              <h3>Зал 1 · Светлый</h3>
+              <span class="pill">универсальный</span>
+            </div>
+            <p>Каталог, портрет, контент. Чистая геометрия и спокойный фон.</p>
+            <div class="meta">
+              <span>Импульсный свет</span>
+              <span>Фоны</span>
+              <span>Стойки</span>
+            </div>
+          </div>
+          <div class="footer">
+            <a class="btn primary" href="#booking">Забронировать</a>
+          </div>
+        </div>
+
+        <div class="card hall">
+          <img src="assets/img/hall-2.png" alt="Зал 2" />
+          <div class="body">
+            <div class="title">
+              <h3>Зал 2 · Графит</h3>
+              <span class="pill">для креатива</span>
+            </div>
+            <p>Более контрастная картинка, плотнее настроение. Для тех, кто любит драму, но контролируемую.</p>
+            <div class="meta">
+              <span>Импульсный свет</span>
+              <span>Флаги/отражатели*</span>
+            </div>
+          </div>
+          <div class="footer">
+            <a class="btn primary" href="#booking">Забронировать</a>
+          </div>
+        </div>
+
+        <div class="card hall">
+          <img src="assets/img/hall-3.png" alt="Зал 3" />
+          <div class="body">
+            <div class="title">
+              <h3>Зал 3 · Предметка</h3>
+              <span class="pill">маркетплейсы</span>
+            </div>
+            <p>Предметная съёмка для брендов и карточек. Ровный свет и быстрый сетап.</p>
+            <div class="meta">
+              <span>Импульсный свет</span>
+              <span>Постоянный свет</span>
+            </div>
+          </div>
+          <div class="footer">
+            <a class="btn primary" href="#booking">Забронировать</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="note" style="margin-top:12px">
+        * Если у тебя реально есть флаги/отражатели, оставляй. Если нет, удали. Сайт должен говорить правду, а не фантазировать.
+      </p>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="container mx-auto py-12">
-    <h2 class="text-3xl font-bold mb-6">Портфолио</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div>
-        <img src="assets/25ADB763-8140-432F-BD55-A2AED430ACDE.jpeg" alt="Портрет" class="rounded-lg mb-2">
-        <p class="text-sm text-gray-700">Портрет в мягком свете</p>
+  <section class="section" id="gear">
+    <div class="container">
+      <div class="head">
+        <h2>Оборудование</h2>
+        <p class="note">Список короткий и честный. В этом мире и так слишком много маркетингового вранья.</p>
       </div>
-      <div>
-        <img src="assets/938B21B5-AE7F-4130-857F-D459334A346A.jpeg" alt="Силуэт" class="rounded-lg mb-2">
-        <p class="text-sm text-gray-700">Женский силуэт. Спокойствие.</p>
-      </div>
-      <div>
-        <img src="assets/380AC584-94BB-4EF2-AD6A-49487F7A0694.jpeg" alt="Минимализм" class="rounded-lg mb-2">
-        <p class="text-sm text-gray-700">Минимализм и приступствие.</p>
-      </div>
-      <div>
-        <img src="assets/30596E27-209C-4047-BC0D-9DFF0A2605AE.jpeg" alt="Мужской портрет" class="rounded-lg mb-2">
-        <p class="text-sm text-gray-700">Мужской портрет. Контраст света.</p>
-      </div>
-      <div>
-        <img src="assets/18818350-A7EC-45B9-854B-A851C3FFDC2C.jpeg" alt="Белая рубашка" class="rounded-lg mb-2">
-        <p class="text-sm text-gray-700">Классический стиль. Белая рубашка.</p>
-      </div>
-      <div>
-        <img src="assets/78347479-9F9A-4E8D-947B-CBCED3E9B585D.jpeg" alt="Художественный портрет" class="rounded-lg mb-2">
-        <p class="text-sm text-gray-700">Художественный портрет. Чёрное и белое.</p>
-      </div>
-      <div>
-        <img src="assets/87964320-8F7C-4173-9C07-4917071E464D.jpeg" alt="Эмоция и тишина" class="rounded-lg mb-2">
-        <p class="text-sm text-gray-700">Серия: эмоция и тишина.</p>
-      </div>
-      <div>
-        <img src="assets/AE3A79BB-8725-4BDA-9E08-2D526170D63B.jpeg" alt="Строгий свет" class="rounded-lg mb-2">
-        <p class="text-sm text-gray-700">Портрет в строгом свете.</p>
-      </div>
-      <div>
-        <img src="assets/BA73C94D-7842-43D0-B026-1962A953D6D8.jpeg" alt="Тепло в монохроме" class="rounded-lg mb-2">
-        <p class="text-sm text-gray-700">Тепло в монохроме.</p>
+
+      <div class="cols">
+        <div class="card list">
+          <h3>Импульсный свет</h3>
+          <ul>
+            <li>Hensel Expert Pro 1000: 4 головы</li>
+            <li>Модификаторы: софтбоксы / стрипы / октобокс / рефлекторы (уточни точный набор)</li>
+            <li>Стойки, синхронизация (по факту)</li>
+          </ul>
+        </div>
+        <div class="card list">
+          <h3>Постоянный свет</h3>
+          <ul>
+            <li>Godox 100W: 1 голова</li>
+            <li>Для видео и быстрых тестов</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-gray-50 py-12">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Контакты</h2>
-      <p class="mb-2">Адрес: г. Мытищи, ул. Астрахова, д. 1, корп. 2</p>
-      <p class="mb-2">Телефон: +7 (495) 123-45-67</p>
-      <p class="mb-2">Instagram: <a href="https://www.instagram.com/prof_photo_com_" class="text-blue-600 hover:underline" target="_blank">@prof_photo_com_</a></p>
-      <p class="mb-2">Как добраться: 5 минут пешком от метро «Арбатская»</p>
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="head">
+        <h2>Тарифы</h2>
+        <p class="note">Поставь цены и живи спокойно. Если пока не готов, оставь “от …”.</p>
+      </div>
+
+      <div class="pricing">
+        <div class="card price">
+          <div class="name">1 час</div>
+          <div class="value">от ХХХ ₽</div>
+          <p class="desc">Быстрый контент, тесты, предметка.</p>
+          <a class="btn primary" href="#booking">Забронировать</a>
+        </div>
+        <div class="card price">
+          <div class="name">2 часа</div>
+          <div class="value">от ХХХ ₽</div>
+          <p class="desc">Комфортно для портрета и каталога.</p>
+          <a class="btn primary" href="#booking">Забронировать</a>
+        </div>
+        <div class="card price">
+          <div class="name">4 часа</div>
+          <div class="value">от ХХХ ₽</div>
+          <p class="desc">Нормальный темп, без гонки.</p>
+          <a class="btn primary" href="#booking">Забронировать</a>
+        </div>
+        <div class="card price">
+          <div class="name">Смена / день</div>
+          <div class="value">по запросу</div>
+          <p class="desc">Команды, продакшн, большие съёмки.</p>
+          <a class="btn primary" href="#booking">Уточнить</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer class="bg-gray-800 text-white py-4">
-    <div class="container mx-auto text-center">
-      <p>© 2025 Монохром. Все права защищены.</p>
+  <section class="section" id="rules">
+    <div class="container">
+      <div class="head">
+        <h2>Правила</h2>
+        <p class="note">Коротко. Жёстко. Без душной бюрократии.</p>
+      </div>
+
+      <div class="rules">
+        <div class="card rule">
+          <h3>Как мы работаем</h3>
+          <ol>
+            <li>Студия по брони. Приходи за 10 минут до времени.</li>
+            <li>Время аренды включает подготовку и сбор.</li>
+            <li>Отмена/перенос: впиши своё правило (например, за 24 часа).</li>
+          </ol>
+        </div>
+        <div class="card rule">
+          <h3>Оборудование и порядок</h3>
+          <ol>
+            <li>Бережно к насадкам, стойкам и фонам. Это не бессмертные артефакты.</li>
+            <li>После съёмки возвращаем всё на место.</li>
+            <li>Если что-то сломалось: говорим сразу, не играем в “само починится”.</li>
+          </ol>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="head">
+        <h2>Контакты</h2>
+        <p class="note">Добавь адрес и ссылки, и эта часть начинает приносить брони. Магия, да.</p>
+      </div>
+
+      <div class="contact">
+        <div class="card box">
+          <div class="label">Адрес</div>
+          <div class="value">Московская область, Мытищи · (добавь точный адрес)</div>
+
+          <div class="label">Связь</div>
+          <div class="value">
+            Телефон: +7 (___) ___-__-__<br/>
+            Telegram: @________<br/>
+            WhatsApp: +7 (___) ___-__-__
+          </div>
+
+          <div class="label">Как добраться</div>
+          <div class="value">Пара пунктов: парковка / проход / лифт. Люди любят, когда им не приходится гадать.</div>
+
+          <div style="margin-top:16px">
+            <a class="btn primary" href="#booking">Забронировать</a>
+          </div>
+        </div>
+
+        <div class="card box" id="booking">
+          <h3 style="margin:0 0 10px">Заявка на бронь</h3>
+          <p class="note" style="margin:0 0 14px">Форма отправляет письмо через mailto. Позже заменишь на Tilda-форму/CRM.</p>
+
+          <form class="form" data-booking-form>
+            <input name="Имя" placeholder="Имя" required />
+            <input name="Телефон" placeholder="Телефон" required />
+            <select name="Зал">
+              <option>Зал 1 · Светлый</option>
+              <option>Зал 2 · Графит</option>
+              <option>Зал 3 · Предметка</option>
+            </select>
+            <input name="Дата/время" placeholder="Дата и время" />
+            <textarea name="Комментарий" placeholder="Задача / формат съёмки / что важно"></textarea>
+            <button class="btn primary" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div>© <span id="y"></span> Монохром</div>
+      <div class="small">
+        <a href="#top">Наверх</a>
+        <a href="#pricing">Тарифы</a>
+        <a href="#contact">Контакты</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
