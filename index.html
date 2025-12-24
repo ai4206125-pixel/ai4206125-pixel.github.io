@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Фотостудия «Монохром» | аренда студии и съёмка</title>
   <meta name="description" content="Импульсный студийный свет, чистые фоны, пространство без визуального шума. Аренда фотостудии и съёмка для брендов, маркетплейсов и креативных проектов." />
-  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Removed broken favicon link -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -14,8 +14,8 @@
   <div class="container">
     <div class="nav">
       <div class="left">
-        <a href="#top" aria-label="Монохром">
-          <img src="assets/img/logo-header.png" width="220" height="51" alt="Монохром" />
+        <a href="#top" aria-label="Монохром" class="logo-text">
+          Монохром
         </a>
       </div>
 
@@ -54,7 +54,6 @@
 
         <div class="card main">
           <span class="badge">
-            <img src="assets/img/logo-mark.png" alt="" width="18" height="14" />
             Импульсный свет · чистые фоны · без визуального шума
           </span>
 
@@ -94,9 +93,8 @@
             </div>
           </div>
 
-          <div style="display:flex; justify-content:flex-end">
-            <img src="assets/img/logo-stamp.png" alt="" style="width:180px; opacity:.28" />
-          </div>
+          <!-- Decorative stamp removed since image is unavailable -->
+          <div style="display:flex; justify-content:flex-end"></div>
         </div>
 
       </div>
@@ -138,7 +136,7 @@
 
       <div class="halls">
         <div class="card hall">
-          <img src="assets/img/hall-1.png" alt="Зал 1" />
+          <img src="hero.jpg" alt="Зал 1" />
           <div class="body">
             <div class="title">
               <h3>Зал 1 · Светлый</h3>
@@ -157,7 +155,7 @@
         </div>
 
         <div class="card hall">
-          <img src="assets/img/hall-2.png" alt="Зал 2" />
+          <img src="hero.jpg" alt="Зал 2" />
           <div class="body">
             <div class="title">
               <h3>Зал 2 · Графит</h3>
@@ -175,7 +173,7 @@
         </div>
 
         <div class="card hall">
-          <img src="assets/img/hall-3.png" alt="Зал 3" />
+          <img src="hero.jpg" alt="Зал 3" />
           <div class="body">
             <div class="title">
               <h3>Зал 3 · Предметка</h3>
@@ -356,6 +354,6 @@
 <script>
   document.getElementById('y').textContent = new Date().getFullYear();
 </script>
-<script src="assets/js/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
